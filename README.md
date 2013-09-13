@@ -5,26 +5,26 @@ Architecture
 
    * Tiers: Web Server + HTML5 Browser
    * Hosting Platform: Google App Engine
-   3. Language: Java + Facelets + Javascript
-   4. Database: Google Datastore + Objectify
+   * Language: Java + Facelets + Javascript
+   * Database: Google Datastore + Objectify
 
 Requirements
 
 Mobile/Tablet Web UI for Enumerators
 
-   1. administer/save surveys even while offline
-   2. appropriate UI for mobile or tablet devices
-   3. multilingual support; multiple simultaneous languages
-   4. survey form error checking
-   5. lookup and edit existing/incomplete surveys
+   * administer/save surveys even while offline
+   * appropriate UI for mobile or tablet devices
+   * multilingual support; multiple simultaneous languages
+   * survey form error checking
+   * lookup and edit existing/incomplete surveys
 
 Administration Web UI for Enumerators
 
-   1. create questions and surveys
-   2. handle complex question types (tables, groups, etc.)
-   3. dashboard to track enumerator performance
-   4. export aggregate data for processing in Excel
-   5. authorize admins/enumerators
+   * create questions and surveys
+   * handle complex question types (tables, groups, etc.)
+   * dashboard to track enumerator performance
+   * export aggregate data for processing in Excel
+   * authorize admins/enumerators
 
 Phasing
 
