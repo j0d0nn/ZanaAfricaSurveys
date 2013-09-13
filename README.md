@@ -3,8 +3,8 @@ ZanaAfrica Surveys
 
 Architecture
 
-   1. Tiers: Web Server + HTML5 Browser
-   2. Hosting Platform: Google App Engine
+   * Tiers: Web Server + HTML5 Browser
+   * Hosting Platform: Google App Engine
    3. Language: Java + Facelets + Javascript
    4. Database: Google Datastore + Objectify
 
