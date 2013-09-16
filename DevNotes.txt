@@ -1,0 +1,7 @@
+Dev Environment
+---------------
+
+I'm using Eclipse Kepler.  Key plugins and update sites:
+  AppEngine (http://dl.google.com/eclipse/plugin/4.3)
+  LESS (http://www.normalesup.org/~simonet/soft/ow/update/)
+  Web Tools (http://download.eclipse.org/webtools.updates/)
