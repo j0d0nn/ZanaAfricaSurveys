@@ -3,6 +3,7 @@
 @darkblue:   #232d5e;
 @white:      #fff;
 @mobilewidth: 500px;
+@footerheight: 40px;
 
 #BODY {
   font-family: Arial, Verdana, sans-serif; margin: 0; padding: 0;
@@ -27,6 +28,16 @@
     @media only screen and (max-width: @mobilewidth) {
       .logo { display: none; }
     }
+  }
+
+  #FOOTER {
+    height: @footerheight;
+    background-color: @darkblue;
+    color: @white;
+  }
+  
+  .wrap {
+    padding: 10px;
   }
   
 

@@ -4,10 +4,12 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
+
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Set;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,12 +28,13 @@ import org.zanaafrica.surveys.model.Text;
 import org.zanaafrica.surveys.store.ParticipantOps;
 import org.zanaafrica.surveys.store.QuestionnaireOps;
 import org.zanaafrica.surveys.store.SurveyOps;
+
 import com.google.appengine.api.users.User;
 import com.google.appengine.tools.development.testing.LocalDatastoreServiceTestConfig;
 import com.google.appengine.tools.development.testing.LocalMemcacheServiceTestConfig;
 import com.google.appengine.tools.development.testing.LocalServiceTestHelper;
-import com.google.gwt.thirdparty.guava.common.collect.Lists;
-import com.google.gwt.thirdparty.guava.common.collect.Sets;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 
 public class StoreTest
 {
