@@ -10,20 +10,28 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
  
-    <!-- 
-        Need DI a message into controller, so auto component scan is disabled, 
-        to avoid double create the movieController bean.
-                Only controller need this hack.    
-                
-    <context:component-scan base-package="org.zanaafrica.surveys.web">
-        <context:exclude-filter type="regex" expression="org.zanaafrica.surveys.web.*" />
-    </context:component-scan>
- -->
     <mvc:annotation-driven />
+
+<!--     <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <bean id="surveyInterceptor" class="org.zanaafrica.surveys.web.LoginInterceptor">
+               <property name="requireLogin"><value>true</value></property>
+               <property name="requireAdmin"><value>false</value></property>
+            </bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/**" />
+            <bean id="adminInterceptor" class="org.zanaafrica.surveys.web.LoginInterceptor">
+                <property name="requireLogin"><value>true</value></property>
+                <property name="requireAdmin"><value>true</value></property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>  -->
  
-    <!-- Bean to show you Di in GAE, via Spring, also init the MovieController -->
-    <bean class="org.zanaafrica.surveys.web.AdminQuestionnaireListController" />
- 
+    <bean id="adminController" class="org.zanaafrica.surveys.web.AdminQuestionnaireListController" />
+    
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
             <value>/pages/</value>

@@ -61,6 +61,7 @@ public class Questionnaire
     public void setDescription (Text description) { this.description = description; }
     public void activate () { this.status = QuestionnaireStatus.Active; }
     public void retire () { this.status = QuestionnaireStatus.Retired; }
+    public void setStatus (QuestionnaireStatus status) { this.status = status; }
     
     /**
      * @return true if this questionnaire has at least one question loaded from the store

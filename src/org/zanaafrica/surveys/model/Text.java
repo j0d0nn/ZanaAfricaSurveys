@@ -27,4 +27,24 @@ public class Text implements Serializable
     public void setTranslation (Language language, String translation) {
         this.translations.add(language.getIndex(), translation);
     }
+    
+    public String getEnglish ()
+    {
+        return this.getTranslation(Language.English);
+    }
+    
+    public String getKiswahili ()
+    {
+        return this.getTranslation(Language.Kiswahili);
+    }
+    
+    public String getAmharic ()
+    {
+        return this.getTranslation(Language.Amharic);
+    }
+    
+    public String toString ()
+    {
+        return this.getEnglish();
+    }
 }

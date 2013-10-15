@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 
-<c:import url="/header.jsp" />
+<c:import url="/widgets/header.jsp" />
 
 <h1>Current questionnaires</h1>
 
@@ -13,9 +13,10 @@
 </c:if>
 <ul>
   <c:forEach items="${startedQuestionnaires}" var="questionnaire" varStatus="loopStatus">
-    <li>${questionnaire.title}</li>
+    <%@include file="/widgets/questionnairelistitem.jsp" %>
   </c:forEach>
 </ul>
+<a href="new">Create New</a>
 
 <h2>Active</h2>
 <c:if test="${noActiveQuestionnaires}">
@@ -23,7 +24,7 @@
 </c:if>
 <ul>
   <c:forEach items="${activeQuestionnaires}" var="questionnaire" varStatus="loopStatus">
-    <li>${questionnaire.title}</li>
+    <%@include file="/widgets/questionnairelistitem.jsp" %>
   </c:forEach>
 </ul>
 
@@ -33,8 +34,8 @@
 </c:if>
 <ul>
   <c:forEach items="${retiredQuestionnaires}" var="questionnaire" varStatus="loopStatus">
-    <li>${questionnaire.title}</li>
+    <%@include file="/widgets/questionnairelistitem.jsp" %>
   </c:forEach>
 </ul>
 
-<c:import url="/footer.jsp" />
+<c:import url="/widgets/footer.jsp" />
